@@ -27,7 +27,7 @@ function New() {
     const fetchTrendingData = async () => {
       try {
         const response = await axios.get(
-          "https://webthreeworld-qf2nswbna-ad99india.vercel.app/api/trending"
+          "https://weblive-1.onrender.com/api/trending"
         );
         setTrendingData(response.data.slice(0, 3));
       } catch (error) {
@@ -47,10 +47,10 @@ function New() {
     const fetchGainersAndLosers = async () => {
       try {
         const gainersResponse = await axios.get(
-          "https://webthreeworld-qf2nswbna-ad99india.vercel.app/api/top-gainers"
+          "https://weblive-1.onrender.com/api/top-gainers"
         );
         const losersResponse = await axios.get(
-          "https://webthreeworld-qf2nswbna-ad99india.vercel.app/api/top-losers"
+          "https://weblive-1.onrender.com/api/top-losers"
         );
 
         console.log("Gainers:", gainersResponse.data);

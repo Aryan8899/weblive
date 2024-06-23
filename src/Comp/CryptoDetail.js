@@ -11,7 +11,7 @@ const CryptoDetail = () => {
     const fetchCryptoDetail = async () => {
       try {
         const response = await axios.get(
-          `https://webthreeworld-qf2nswbna-ad99india.vercel.app/api/cryptocurrencies/${id}`
+          `https://weblive-1.onrender.com/api/cryptocurrencies/${id}`
         );
         setCryptoDetail(response.data);
       } catch (error) {

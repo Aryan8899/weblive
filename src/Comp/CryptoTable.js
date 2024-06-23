@@ -78,7 +78,7 @@ const CryptoTable = () => {
   const fetchData = async (page = 1) => {
     try {
       const response = await axios.get(
-        `https://webthreeworld-qf2nswbna-ad99india.vercel.app/api/cryptocurrencies?page=${page}&limit=${rowsToShow}`
+        `https://weblive-1.onrender.com/api/cryptocurrencies?page=${page}&limit=${rowsToShow}`
       );
       setCryptocurrencies(
         response.data.data.map((crypto, index) => ({
